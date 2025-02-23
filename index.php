@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com">
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+    <!--Para comprobar código http://localhost:8012/freelancer_inicio/-->
 </head>
 <body>
     <header>
@@ -106,34 +107,34 @@
     
     <section>
         <h2>Contacto</h2>
-        <form class="formulario">
+        <form class="formulario" method="post">
             <fieldset>
                 <legend>Contáctame</legend>
 
                 <div class="contenedor-campos">
                     <div class="campo">
                         <label for="#">Nombre:</label>
-                        <input class="input-text" type="text" placeholder="Nombre">
+                        <input class="input-text" name="nombre" type="text" placeholder="Nombre">
                     </div>
     
                     <div class="campo">
-                        <label for="#">Teléfono:</label>
-                        <input class="input-text" type="number" placeholder="Teléfono">
+                        <label for="#">Apellido:</label>
+                        <input class="input-text" name="lastname" type="text" placeholder="Apellidos">
                     </div>
     
                     <div class="campo">
                         <label for="#">Correo:</label>
-                        <input class="input-text" type="email" placeholder="Correo Electrónico">
+                        <input class="input-text" name="email" type="email" placeholder="Correo Electrónico">
                     </div>
     
                     <div class="campo">
                         <label for="#">Mensaje:</label>
-                        <textarea class="input-text"></textarea>
+                        <textarea class="input-text" name="area"></textarea>
                     </div>
                 </div><!--contenedor-campos-->          
                 
                 <div class="alinear-derecha flex">
-                    <input class="boton wd-100" type="submit" value= "Enviar">
+                    <input class="boton wd-100" type="submit" name="register" value= "Enviar">
                 </div>
                 
             </fieldset>           
@@ -144,6 +145,9 @@
     <footer class="footer">
         <p>Todos los derechos reservados Iván Roldán Mora, Dieñador</p>
     </footer>
-
+    <script src="fucionalidad.js"></script>
+    <?php
+    include "php/register.php";
+    ?>
 </body>
 </html>

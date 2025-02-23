@@ -244,3 +244,18 @@ h1,h2,h3{
 .footer{
     text-align: center;
 }
+/*Agregado extra de este vicdeo de youtube https://www.youtube.com/watch?v=cka0J41iJY0*/
+.ok {
+	text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: #1e6;
+	color: #fff
+}
+.bad {
+	text-align: center;
+	width: 100%;
+	padding: 12px;
+	background-color: #a22;
+	color: #fff
+}
