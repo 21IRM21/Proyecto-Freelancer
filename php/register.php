@@ -10,7 +10,7 @@ if ($conn){
 if (isset($_POST['register'])) {
     if (strlen($_POST['nombre']) >= 1 && strlen($_POST['lastname']) >= 1 && strlen($_POST['email']) >= 1) {
 	    $name = trim($_POST['nombre']);
-        $apellido = trim($_POST['lastname']);
+            $apellido = trim($_POST['lastname']);
 	    $email = trim($_POST['email']);
 	    $fechareg = date("Y-m-d"); // Formato adecuado para MySQL
 	    $consulta = "INSERT INTO `datos de registro`(`Nombre`, `Apellido`, `email`, `Fecha_Registro`) VALUES ('$name','$apellido','$email','$fechareg')";
